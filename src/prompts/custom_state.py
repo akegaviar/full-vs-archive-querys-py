@@ -93,6 +93,6 @@ def process_custom_selection(selection, contract_functions):
     # print("inputs: ", user_inputs)
 
     if len(inputs) < 1:
-        call_contract_function_without_params(selection, block)
+        call_contract_function_without_params(selection, int(block))
     else:
-        call_contract_function_with_params(selection, user_inputs, block)
+        call_contract_function_with_params(selection, user_inputs, int(block))

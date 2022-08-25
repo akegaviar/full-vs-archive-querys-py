@@ -145,9 +145,6 @@ archive_node_contract = archive_node_provider.eth.contract(
 
 
 def get_contract_call_methods():
-    pprint(full_node_contract.functions._functions)
-    print(type(full_node_contract.functions._functions))
-
     view_functions = {}
 
     for function in full_node_contract.functions._functions:
@@ -160,7 +157,9 @@ def get_contract_call_methods():
 
 def call_contract_function_without_params(selection, block):
     try:
-        print("[QUERYING] Calling {} method on block {}".format(selection, block))
+        print(
+            "[QUERYING] Calling {} method on block {}".format(selection, block),
+        )
         result = full_node_contract.functions[selection]().call(block_identifier=block)
 
         print(
@@ -185,11 +184,11 @@ def call_contract_function_without_params(selection, block):
             )
 
         else:
+            print("error")
             print(str(e))
 
 
 def call_contract_function_with_params(selection, params, block):
-    print("Params: ", params)
     try:
         print("[QUERYING] Calling {} method on block {}".format(selection, block))
 
