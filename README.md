@@ -16,7 +16,7 @@
   <a target="_blank" href="https://console.chainstack.com/user/account/create">Start for free</a> •
 </p>
 
-# Querying full and archive Ethereum nodes with Python
+# Querying full and archive EVM nodes with Python
 
 This project allows the retrieval of historical data from the blockchain programmatically, switching between a full and archive node provider when necessary.
 
@@ -25,7 +25,7 @@ See the full tutorial on the Chainstack blog:
 
 ## Project details
 
-This repository contains the Python version of a tool to query common state functions. Some essential functions include getting an address balance and storage at a given position, a contract bytecode, or even the whole transactions included on a given block.
+This repository holds the Python version of a tool to query common state functions. Some essential functions include getting an address balance and storage at a given position, a contract bytecode, or even the whole transactions included on a given block.
 
 This tool queries the blockchain using the web3 and inquirer libraries for Python. 
 
