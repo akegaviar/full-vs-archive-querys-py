@@ -6,12 +6,12 @@ from pprint import pprint
 # Init full and archive provider
 full_node_provider = Web3(
     Web3.HTTPProvider(
-        "https://nd-479-987-415.p2pify.com/271156373b36700f7576cf46e68b1262"
+        "FULL_NODE_URL"
     )
 )
 archive_node_provider = Web3(
     Web3.HTTPProvider(
-        "https://nd-072-228-848.p2pify.com/3f7a80739e2f6739cae0256a2660725b"
+        "ARCHIVE_NODE_URL"
     )
 )
 
